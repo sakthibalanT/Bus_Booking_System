@@ -1,0 +1,164 @@
+
+
+<div>
+
+    <header id="header" class="fixed-top header-inner-pages">
+      <div class="container d-flex align-items-center">
+  
+        <h1 class="logo me-auto" style="color: white;">TEQUEUE Bus Ticket Reservation</h1>
+        
+        <nav id="navbar" class="navbar">
+          <ul>
+            
+           <li *ngIf="!this.authService.isLoggedIn()"><a class="getstarted scrollto" routerLink="/login" href="javascript:void(0);">Login</a></li>
+  <li *ngIf="!this.authService.isLoggedIn()"><a class="getstarted scrollto" routerLink="/register" href="javascript:void(0);">Register</a></li>
+          
+  
+    <li *ngIf="this.authService.isLoggedIn() && !admin1"><a class="getstarted scrollto"   routerLink="/book" href="javascript:void(0);"> Book Bus Now! </a></li>
+    <li *ngIf="this.authService.isLoggedIn() && !admin1"><a class="getstarted scrollto"   routerLink="/userreserves" href="javascript:void(0);"> See your reservations </a></li>
+    <li *ngIf="admin1"><a class="getstarted scrollto" routerLink="/admin">Admin Page</a></li>
+
+    <li  *ngIf="this.authService.isLoggedIn()"><a class="getstarted scrollto"  (click)="logout()" href="javascript:void(0);">Logout</a></li>
+
+            
+            <li *ngIf="!admin1"><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+  
+      </div>
+    </header>
+  
+    <main id="main">
+  
+      <section id="breadcrumbs" class="breadcrumbs">
+        <div class="container">
+  
+          <ol>
+          </ol><br>
+          <h2 class="text-center">Welcome to MSEC hostel's dedicated bus service – your safe passage home every weekend!</h2>
+  
+        </div>
+      </section>
+  
+      <section id="portfolio-details" class="portfolio-details">
+        <div class="container">
+  
+          <div class="row gy-4">
+  
+            <div class="col-lg-8">
+                <div class="portfolio-details-slider swiper ">
+                  <div class="swiper-wrapper align-items-center">
+    
+                    
+                    <div  class="swiper-slide  text-center" >
+                      <img  src=" ../assets\img\portfolio\p3.jpg"  style="border-radius: 10px;height: 50%; width: 50%;" alt="">
+                    </div>
+    
+                  </div>
+                 
+                </div>
+              </div>
+  
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h2 class="text-center">Give Futuristic Ride</h2>
+                <p>At MSEC Hostels, we prioritize the well-being and convenience of our hostellers, ensuring a seamless journey back to your loved ones.
+
+                    Forget the hassle of arranging transportation or worrying about late-night travels. Our reliable bus service operates like clockwork, providing a comfortable and secure journey for all. With experienced drivers at the helm and adherence to strict safety protocols, your peace of mind is our top priority.</p>
+              </div><br><br>
+              <div class="portfolio-info">
+                <h2 class="text-center">Why our service?</h2>
+                <p>
+                    Whether you're eager to reunite with family, catch up with old friends, or simply unwind in the comfort of home, our weekend bus service has you covered. Say goodbye to the stress of travel logistics and hello to worry-free weekends.
+
+                    Stay connected with us for the latest schedules, routes, and any updates regarding our bus service. Your journey home starts here. Hop aboard and let us take you where you need to be.                </p>
+              </div>
+            </div>
+  
+          </div>
+          <br><br><br>
+          <div class="row">
+            <div class="col">
+          <div class="align-items-center portfolio-info">
+            <h2 class="text-center" >What makes us special?</h2>
+            <p class="">
+                Imagine this: You're ready to head home for the weekend from college. But instead of worrying about how to get there, you can simply jump on our comfy bus right from your hostel.
+
+Our weekend bus service is like having your own personal driver, but better. We've got really comfy seats, plenty of space for your bags, and maybe even some snacks if you're hungry. Plus, our drivers are really good at what they do, so you're safe with us.
+
+It's like a stress-free ticket straight home. No need to stress about parking, catching trains, or asking for rides from friends. Just relax, sit back, and enjoy the journey.
+
+Whether you're going to see family, hang out with friends, or just want to unwind at home, our bus service is here for you. So, get ready for a smooth ride home, without any worries.
+            </p>
+          </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+    </main>
+  
+  
+    <footer id="footer">
+  
+      <div class="footer-newsletter">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <h4>Travel is the only thing you buy that makes you richer.</h4>
+              <p></p>
+              
+                <a href="javascript:void(0);" routerLink="/book" class="btn btn-primary">Book your Bus Now!</a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+  
+            <div class="col-lg-3 col-md-6 footer-contact" id="contact">
+              <h3>Contact Us</h3>
+              <p>
+                MSEC, Mepco Nagar<br>
+                Sivakasi,626101<br>
+                 <br><br>
+                <strong>Phone:</strong> +91 9894194545<br>
+                <strong>Email:</strong> MSEC&#64;mepcoeng.ac.in
+              </p>
+            </div>
+  
+            
+  
+    
+  
+            <div class="col-lg-3 col-md-6 footer-links" id="contact">
+              <h4>Our Social Networks</h4>
+              <div class="social-links mt-3">
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
+      <div class="container footer-bottom clearfix">
+        <div class="copyright">
+          
+        </div>
+        <div class="credits">
+          Designed by Sriram, Vijesh, Prabhu
+        </div>
+      </div>
+    </footer>
+  
+    
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+</div>  

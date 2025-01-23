@@ -1,0 +1,26 @@
+
+<div class="container">
+<h1>Book your Bus!</h1>
+<p>Enter Your Destination: </p>
+<input type="text" [(ngModel)]="dest" />
+
+<button (click)="search()">Search for buses</button>
+{{success}}
+<ul *ngIf="reqbuses.length>0">
+<li *ngFor="let bus of reqbuses">
+Bus Name: {{bus.busname}}
+Bus Number: {{bus.busNumber}}
+Bus Starting Place: {{bus.start}}
+Bus Ending Place: {{bus.end}}
+Bus Capacity: {{bus.capacity}}
+Bus Departure Date: {{bus.date}}
+</li>
+<p>Enter Preferred Bus Number: </p>
+<input type="text" [(ngModel)]="Preferred" required/>
+<button (click)="addReservation()">Reserve</button>
+{{errormsg}}
+</ul>
+<div *ngIf="reqbuses.length==0">
+    <p>No buses found</p>
+</div>
+</div>

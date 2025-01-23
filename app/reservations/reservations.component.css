@@ -1,0 +1,71 @@
+/* Style for the header */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  #con1{
+    background: linear-gradient(135deg, #00aaff, #ff00aa);
+  }
+  .container {
+
+    background-color: white;
+  }
+  /* Style for error message */
+  .alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the table */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  /* Style for table header */
+  th {
+    background-color: #f8f9fa;
+    color: #343a40;
+    font-weight: bold;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  /* Style for table cells */
+  td {
+    padding: 8px;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  /* Style for alternating row colors */
+  tr:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+  
+  /* Style for reservation rows */
+  tr.reservation-row:hover {
+    background-color: #e9ecef;
+  }
+  #con1 {
+    background: linear-gradient(135deg, #00aaff, #ff00aa); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    width: 80%; 
+    max-width: 500px;
+    background-color: white;
+    border-radius: 10px;
+  }
+  .card {
+    padding: 20px;
+    border-radius: 10px;
+  }

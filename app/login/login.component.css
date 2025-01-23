@@ -1,0 +1,26 @@
+#body {
+    background: linear-gradient(135deg, #00aaff, #ff00aa); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    width: 80%; 
+    max-width: 500px;
+    background-color: white;
+    border-radius: 10px;
+  }
+  .card {
+    padding: 20px;
+    border-radius: 10px;
+  }
+.form-control{
+    border: 1px solid black !important;
+    border-radius: 10px !important;
+    background-color: rgb(182, 177, 172);
+}
+.form-control:hover{
+    
+    background-color: rgb(156, 98, 137);
+}

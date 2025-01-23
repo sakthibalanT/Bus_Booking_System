@@ -1,0 +1,34 @@
+<div id="body">
+<div class="container">
+  <div class="card">
+    <h2 class="text-center">Add New Journey</h2>
+    <form (ngSubmit)="addBus()">
+      <div class="form-group">
+        <label for="busNumber">Bus Number:</label>
+        <input type="text" class="form-control" id="busNumber" [(ngModel)]="busData.busNumber" name="busNumber" required>
+      </div>
+      <div class="form-group">
+        <label for="capacity">Capacity:</label>
+        <input type="number" class="form-control" id="capacity" [(ngModel)]="busData.capacity" name="capacity" required>
+      </div>
+      <div class="form-group">
+        <label for="busname">Bus name:</label>
+        <input type="string" class="form-control" id="busname" [(ngModel)]="busData.busname" name="busname" required>
+      </div>
+      <div class="form-group">
+        <label for="start">Bus Starting Place:</label>
+        <input type="string" class="form-control" id="start" [(ngModel)]="busData.start" name="start" required>
+      </div>
+      <div class="form-group">
+        <label for="end">Bus Ending Place:</label>
+        <input type="string" class="form-control" id="end" [(ngModel)]="busData.end" name="end" required>
+      </div>
+      <div class="form-group">
+        <label for="date">Bus Date:</label>
+        <input type="datetime-local" class="form-control" id="date" [(ngModel)]="busData.date" name="date" required>
+      </div>
+      <br>
+      <button type="submit" class="btn btn-primary">Add Bus</button>
+    </form>
+  </div>
+</div></div>

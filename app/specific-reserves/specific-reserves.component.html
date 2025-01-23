@@ -1,0 +1,33 @@
+
+<div id="con1">
+    <div class="container">
+    
+    <h1 class="text-center">Your Reservations</h1>
+    
+    <div *ngIf="errorMessage" class="alert alert-danger" role="alert">
+      {{ errorMessage }}
+    </div>
+    
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Phone</th>
+          <th scope="col">Bus Id</th>
+          <th scope="col">Bus Name</th>
+          <th scope="col">Destination</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let reservation of reqreserves">
+          <td>{{ reservation.name }}</td>
+          <td>{{ reservation.phone }}</td>
+          <td>{{ reservation.busNumber }}</td>
+    
+          <td>{{ reservation.busname }}</td>
+          <td>{{ reservation.end }}</td>
+          
+        </tr>
+      </tbody>
+    </table>
+    </div></div>

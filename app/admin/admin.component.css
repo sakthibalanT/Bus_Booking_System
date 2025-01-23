@@ -1,0 +1,38 @@
+#body {
+    background: linear-gradient(135deg, #00aaff, #ff00aa); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    width: 80%; 
+    max-width: 500px; 
+    background-color: white;
+  }
+  .card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+
+  }
+  .card:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn-custom {
+    margin-top: 10px;
+  }
+  .btn-add-bus {
+    background-color: #28a745; 
+    border-color: #28a745;
+  }
+  .btn-delete-bus {
+    background-color: #dc3545; 
+    border-color: #dc3545;
+  }
+  .btn-display-bus {
+    background-color: #007bff; 
+    border-color: #007bff;
+  }

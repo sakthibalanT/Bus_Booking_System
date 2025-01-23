@@ -1,0 +1,22 @@
+#body {
+    background: linear-gradient(135deg, #00aaff, #ff00aa); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    width: 80%; 
+    max-width: 500px;
+    background-color: white;
+  }
+  .card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  .bus-list-container {
+    height: 500px; 
+    overflow-y: auto;
+  }

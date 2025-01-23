@@ -1,0 +1,21 @@
+<div id="body">
+  <div class="container">
+    <div class="card">
+      <h2 class="text-center mb-4">Available Journeys</h2>
+      <div class="bus-list-container">
+        <div class='bus-list' *ngFor="let bus of buses">
+          <div class='bus-item'>
+            <div class="card">
+          <p>Bus Number: {{ bus.busNumber }}</p>
+    <p>Bus Capacity: {{ bus.capacity }}</p>
+    <p>Bus Name: {{ bus.busname }}</p>
+    <p>Bus Start: {{ bus.start }}</p>
+    <p>Bus End: {{ bus.end }}</p>
+    <p>Bus Date: {{ bus.date }}</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+<div id="body">
+<div class="container">
+    <div class="card">
+      <h2 class="text-center m-5">Register</h2>
+
+    <div *ngIf="errorMessage" style="color: red;">{{ errorMessage }}</div>
+    <form (ngSubmit)="register()" >
+      <div class="form-group ">
+        <label for="username">Username:</label>
+        <input class="form-control" type="text" id="username" name="username" [(ngModel)]="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input class="form-control" type="password" id="password" name="password" [(ngModel)]="password" required>
+      </div>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input class="form-control" type="text" id="password" name="name" [(ngModel)]="name" required>
+      </div>
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input class="form-control" type="number" id="age" name="age" [(ngModel)]="age" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input class="form-control" type="number" id="phone" name="phone" [(ngModel)]="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <input class="form-control" type="text" id="gender" name="gender" [(ngModel)]="gender" required>
+      </div>
+      <div class="form-group">
+        <label for="addr">Address:</label>
+        <input class="form-control" type="text" id="addr" name="addr" [(ngModel)]="addr" required>
+      </div>
+      <div class="form-group">
+        <label for="adhaar">Adhaar Number:</label>
+        <input class="form-control" type="text" id="adhaar" name="adhaar" [(ngModel)]="adhaar" required>
+      </div><br>
+      <button class="btn btn-primary btn-block" type="submit">Register</button>
+    </form>
+  </div>
+</div>
+</div>
+  
